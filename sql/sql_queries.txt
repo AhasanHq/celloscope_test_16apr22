@@ -1,0 +1,32 @@
+SQL
+
+
+1. Databse connected and viewed by pgAdmin4
+(screenshot attached)
+
+
+2. View Data From A Table
+select * from public.customers
+order by name desc;
+
+
+
+3. Insert Data Into A Table
+
+insert into public.purchase_history(id, product_name, unit_price, quantity, total_price, customer_id)
+values ('114cc686-8e1c-406f-838d-0fff5815173a', 'ASUS VivoBook', 45000, 1, 45000, '114cc686-8e1c-406f-838d-0eee5815173a');
+commit;
+
+
+4. Generate a Join View
+
+select * from public.purchase_history
+where customer_id = 'fe6032b8-48e6-4665-9036-955957e1c121';
+
+
+
+
+
+
+
+
